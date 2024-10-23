@@ -75,14 +75,14 @@ main nav button {
   padding: 0.5em;
 }
 
-main nav button:first-child {
+.colonne{
   background-color: #1bd79e;
 }
 
 /* La grille avec les images */
 div {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5em;
 }
 
@@ -91,7 +91,7 @@ div img {
   object-fit: cover;
 }
 
-div img:nth-child(n + 15) {display: none;}
+div img:nth-child(n + 12) {display: none;}
 
 footer {
   text-align: center;
@@ -110,6 +110,24 @@ footer p:last-child {
   font-size: 0.625em;
 }
 
+/* Format ordinateur */
+@media screen and (min-width: 1024px) {
+  main h2,
+  main p {
+    width: 70%;
+  }
+
+  main nav button {
+    font-size: 1em;
+  }
+
+  .images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .images img:nth-child(n + 5) {display: block; }
+}
+
 /* Format tablette */
 @media screen and (min-width: 768px) {
   main {
@@ -124,31 +142,13 @@ footer p:last-child {
     font-size: 0.75em;
   }
 
-  .grid {
+  .images {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .grid img:nth-child(n + 10) {
-    display: block;
-  }
+  .images img:nth-child(n + 10) {display: block; }
 
   main p {
     width: 80%;
-  }
-}
-
-/* Format ordinateur */
-@media screen and (min-width: 1024px) {
-  main h2,
-  main p {
-    width: 60%;
-  }
-
-  main nav button {
-    font-size: 1em;
-  }
-
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
