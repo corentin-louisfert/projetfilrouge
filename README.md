@@ -1,6 +1,6 @@
 # Projet Fil Rouge
 
-Une galerie d'images en ligne dédiée à la photographie d'art, mettant en avant le travail de Solène Avril.
+Projet qui consiste à recréer une galerie d'images en ligne dédiée à la photographie d'art, mettant en avant le travail de Solène Avril.
 
 ## Technologies Utilisées
 
